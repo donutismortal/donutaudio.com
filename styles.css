@@ -1,0 +1,42 @@
+
+.title {
+    color: hsl(300, 100%, 50%);
+    margin: 10px;
+    font-family: "Bitcount Prop Single";
+    font-size: 40px;
+}
+.main-title{
+    font-family:"Bitcount Prop Single";
+}
+
+.logo {
+    width: 90px;
+}
+.big-logo {
+    width: 70%;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    background-color: darkgreen;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    justify-content: center;
+}
+p {
+    font-family: "EB Garamond";
+}
+
+.button {
+    color: black;
+    background-color: green;
+    font-family: "EB Garamond";
+    padding: 5px;
+    margin: 10px;
+    border: 0;
+}
+.blue {
+    background-color: cyan;
+}
