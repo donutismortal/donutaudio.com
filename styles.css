@@ -1,42 +1,138 @@
-
-.title {
-    color: hsl(300, 100%, 50%);
-    margin: 10px;
-    font-family: "Bitcount Prop Single";
-    font-size: 40px;
-}
-.main-title{
-    font-family:"Bitcount Prop Single";
+html, body {
+  height: 100%;
+  margin: 0;
 }
 
-.logo {
-    width: 90px;
-}
-.big-logo {
-    width: 70%;
+.background {
+  background-image: url("https://donutismoral.neocities.org/abbsetup.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
-header {
-    width: 100%;
-    display: flex;
-    background-color: darkgreen;
-    padding: 0;
-    margin: 0;
-    border: 0;
-    justify-content: center;
+.center-box {
+  display: flex;
+  object-fit: fill;
+  height: 90%;
+  width: 90%;
+  border: 4px solid green;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  background-color: hsla(109, 100%, 86%, 0.8);
 }
-p {
-    font-family: "EB Garamond";
+
+.home-header {
+  color: black;
+  margin: 10px;
+  padding: 10px;
+  font-family: "Bitcount Prop Single";
+  font-size: xx-large;
+  font-weight: 400;
+  background-color: pink;
+  border: 4px solid magenta;
+  justify-content: center;
+}
+
+.button-list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
 }
 
 .button {
-    color: black;
-    background-color: green;
-    font-family: "EB Garamond";
-    padding: 5px;
-    margin: 10px;
-    border: 0;
+  color: darkmagenta;
+  background-color: pink;
+  border: 4px solid magenta;
+  font-family: "EB Garamond";
+  font-size: medium;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
 }
-.blue {
-    background-color: cyan;
+
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  background-color: yellowgreen;
+  height: 75px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  flex-direction: row;
+}
+
+.logo {
+  height: 75px;
+  justify-content: right;
+  position: absolute;
+  right: 10px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+}
+
+.header-left button{
+  color: black;
+  background-color: pink;
+  border: 2px solid darkmagenta;
+  font-family: "EB Garamond";
+  font-size: medium;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+button:hover{
+  background-color: darkgreen;
+  color: white;
+  border-color: yellowgreen;
+  border-radius: 0;
+}
+
+.empty-space {
+  display: flex;
+  justify-content: center;
+  margin: 100px;
+}
+.empty-space2 {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+.empty-space3 {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+a i{
+  color: magenta;
+  font-size: 40px;
+}
+a i:hover{
+  color: green;
+  font-size: 40px;
+}
+
+h1 {
+    color: black;
+    font-family: "Bitcount Prop Single";
+    font-weight: 400;
+    font-size: xx-large;
+    padding: 0;
+    margin: 10px;;
 }
