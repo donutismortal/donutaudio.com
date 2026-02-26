@@ -1,44 +1,58 @@
 html, body {
   height: 100%;
+  width: 100%;
   margin: 0;
 }
 
-.background {
-  background-image: url("https://donutismoral.neocities.org/abbsetup.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: top center;
-
+.main {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
   
+  flex-direction: column;
 }
 
-.center-box {
+.half {
+  width: 100%;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
   display: flex;
-  object-fit: fill;
-  height: 90%;
-  width: 90%;
-  border: 4px solid green;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 4px;
-  background-color: hsla(109, 100%, 86%, 0.8);
 }
 
-.home-header {
-  color: black;
-  margin: 10px;
-  padding: 10px;
-  font-family: "Bitcount Prop Single";
-  font-size: xx-large;
-  font-weight: 400;
-  background-color: pink;
-  border: 4px solid magenta;
+@media screen and (min-width: 600px) {
+  .main {flex-direction: row;}
+}
+
+.half {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+h1 {
+    color: black;
+    font-family: "Bitcount Prop Single";
+    font-weight: 400;
+    font-size: xx-large;
+    padding: 0;
+    margin: 10px;;
+}
+
+p {
+  font-family: "EB Garamond";
+  font-size: large;
+  margin: 20px;  
+  text-indent: 30px;
 }
 
 .button-list {
@@ -49,10 +63,10 @@ html, body {
   gap: 4px;
 }
 
-.button {
+button {
   color: darkmagenta;
   background-color: pink;
-  border: 4px solid magenta;
+  border: 4px solid darkmagenta;
   font-family: "EB Garamond";
   font-size: medium;
   padding: 5px;
@@ -64,7 +78,7 @@ header {
   display: flex;
   position: fixed;
   top: 0;
-  background-color: yellowgreen;
+  background-color: pink;
   height: 75px;
   width: 100%;
   padding: 0;
@@ -96,13 +110,6 @@ header {
   margin: 5px;
 }
 
-button:hover{
-  background-color: darkgreen;
-  color: white;
-  border-color: yellowgreen;
-  border-radius: 0;
-}
-
 .empty-space {
   display: flex;
   justify-content: center;
@@ -119,20 +126,14 @@ button:hover{
   margin: 10px;
 }
 
-a i{
-  color: magenta;
-  font-size: 40px;
-}
-a i:hover{
-  color: green;
-  font-size: 40px;
+button:hover{
+  background-color: darkgreen;
+  color: white;
+  border-color: yellowgreen;
+  border-radius: 0;
 }
 
-h1 {
-    color: black;
-    font-family: "Bitcount Prop Single";
-    font-weight: 400;
-    font-size: xx-large;
-    padding: 0;
-    margin: 10px;;
+.img {
+  width:50%;
+  margin: 20px;  
 }
